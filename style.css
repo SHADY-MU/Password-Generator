@@ -1,0 +1,66 @@
+body{
+    background: rgb(127, 9, 156);
+    text-transform: capitalize;
+}
+.container{
+    margin: 10vh auto;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    gap: 10px;
+}
+.container i{
+    margin-top: 20PX;
+    padding: 5px;
+    border: 3px solid ;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.container .input{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background: #e8d0d0;
+    padding: 10px;
+    border-radius: 10px;
+}
+.lenght,.Password{
+    padding: 10px;
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: #ddc8c8 ;
+    font-size: 18px;
+}
+
+button{
+    padding: 15px;
+    width: 250px;
+    background: #120d0d;
+    color: white;
+    font-size: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: lightblue;
+    transition-duration: .5s;
+    color: black;
+}
+
+p{
+    font-size: 18px;
+    border: 5px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    transition-duration: .5s;
+}
+
+p:hover{
+    background: lightblue;
+    scale: 1.2;
+}
