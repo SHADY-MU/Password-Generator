@@ -1,10 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
 body{
     background: rgb(127, 9, 156);
     text-transform: capitalize;
+    font-family: "Roboto", sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container{
-    margin: 10vh auto;
+    width: 360px;
     display: flex;
+    padding: 20px;
     flex-direction: column;
     background: white;
     justify-content: center;
@@ -36,7 +54,11 @@ body{
     font-size: 18px;
 }
 
-button{
+.Password {
+    user-select: none;
+}
+
+button.generate-pass{
     padding: 15px;
     width: 250px;
     background: #120d0d;
@@ -46,21 +68,22 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+button.generate-pass:hover{
     background: lightblue;
     transition-duration: .5s;
     color: black;
 }
 
-p{
+button:not(.generate-pass){
     font-size: 18px;
     border: 5px solid black;
     padding: 10px;
     border-radius: 10px;
-    transition-duration: .5s;
+    transition-duration: .2s;
+    cursor: pointer;
 }
 
-p:hover{
+button:not(.generate-pass):hover{
     background: lightblue;
     scale: 1.2;
 }
